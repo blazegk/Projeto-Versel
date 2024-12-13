@@ -48,7 +48,7 @@ function buscar() {
     }
   
     // Envia o critério de busca para o backend
-    fetch(`http://localhost:3000/bodybuilder/search/${criterio}`, {
+    fetch(`https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/bodybuilder/search/${criterio}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -92,7 +92,7 @@ function alterar(cpf) {
 
 function excluir(cpf) {
   if (confirm("Deseja realmente excluir este body builder?")) {
-    fetch("http://localhost:3000/body-builder/" + cpf, {
+    fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/body-builder/" + cpf, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -138,7 +138,7 @@ function salvar() {
 
   //se clienteAlterado == null, então está adicionando um novo cliente
   if (clienteAlterado == null) {
-    fetch("http://localhost:3000/body-builder", {
+    fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/body-builder", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -154,7 +154,7 @@ function salvar() {
       });
   } else {
     //senao está alterando um cliente
-    fetch("http://localhost:3000/body-builder/" + clienteAlterado.cpf, {
+    fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/body-builder/" + clienteAlterado.cpf, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -217,7 +217,7 @@ function atualizarLista() {
 }
 
 function carregarClientes() {
-  fetch("http://localhost:3000/body-builder", {
+  fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/body-builder", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -240,7 +240,7 @@ function carregarClientes() {
 }
 
 function carregarAcademias() {
-  fetch("http://localhost:3000/gym", {
+  fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/gym", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -280,7 +280,7 @@ function salvarEstilo() {
     };
   
     // Envia a requisição para o servidor
-    fetch("http://localhost:3000/style", {
+    fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/style", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // Define que o corpo da requisição é JSON
@@ -318,7 +318,7 @@ function salvarEstilo() {
   }
 
   function carregarListaEstilos() {
-    fetch("http://localhost:3000/style", {
+    fetch("https://projeto-versel-iyoupst73-joao-felipes-projects-47aa660e.vercel.app/style", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
