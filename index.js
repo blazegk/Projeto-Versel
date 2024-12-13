@@ -4,9 +4,9 @@ const app = express()
 app.use(cors())
 const port = 3000
 app.use(express.json())
-const { BodyBuilder } = require('./src/bodybuilder/bodybuilder.entity')
-const { Gym } = require('./src/gym/gym.entity')
-const { Style } = require('./src/style/style.entity')
+const { BodyBuilder } = require('https://projeto-versel-lilac.vercel.app/src/bodybuilder/bodybuilder.entity')
+const { Gym } = require('https://projeto-versel-lilac.vercel.app/src/gym/gym.entity')
+const { Style } = require('https://projeto-versel-lilac.vercel.app/src/style/style.entity')
 
 //banco de dados de clientes
 var clientes = []
